@@ -13,3 +13,7 @@ hs_err_pid*
 
 # Eclipse-specific files generatable from pom.xml via Eclipse m2e
 .project
+/target/
+/.classpath
+/bin/
+/.settings/
