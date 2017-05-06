@@ -1,2 +1,2 @@
 language: java
-script: mvn --batch-mode verify
+script: mvn --batch-mode verify javadoc:javadoc versions:display-property-updates versions:display-plugin-updates versions:display-dependency-updates
