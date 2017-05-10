@@ -1,0 +1,5 @@
+TODO: automate some of this and/or verify in Maven build
+1) Window | Preferences:
+   1) General | Editors | Text Editors: check Insert spaces for tabs, Show print margin
+   2) Maven | User Interface: check Open XML page in the POM editor by default
+   3) XML | XML Files | Editor: select Indent using spaces, set Indentation size to 4
