@@ -8,9 +8,31 @@
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
+            <groupId>com.google.auto.value</groupId>
+            <artifactId>auto-value</artifactId>
+            <version>${auto-value.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>${jsr305.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest-all.version}</version>
         </dependency>
     </dependencies>
     <properties>
@@ -31,7 +53,12 @@
         <versions-maven-plugin.version>2.3</versions-maven-plugin.version>
         <jacoco-maven-plugin.version>0.7.9</jacoco-maven-plugin.version>
 
+        <auto-value.version>1.4.1</auto-value.version>
+        <jsr305.version>3.0.2</jsr305.version>
+        <guava.version>21.0</guava.version>
+
         <junit.version>4.12</junit.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version>
     </properties>
 
     <!-- Build Settings -->
@@ -92,8 +119,12 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco-maven-plugin.version}</version>
                 <configuration>
+                    <excludes>
+                        <exclude>**/AutoValue_*</exclude>
+                    </excludes>
                     <rules>
                         <rule>
+                            <element>METHOD</element>
                             <limits>
                                 <limit>
                                     <minimum>1.000</minimum>
