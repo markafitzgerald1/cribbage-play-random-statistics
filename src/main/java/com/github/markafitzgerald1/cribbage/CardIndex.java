@@ -6,5 +6,5 @@ package com.github.markafitzgerald1.cribbage;
  * 52-card deck</a>.
  */
 public enum CardIndex {
-	ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING;
+    ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING;
 }

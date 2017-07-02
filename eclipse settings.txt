@@ -2,14 +2,26 @@ TODO: automate some of this and/or verify in Maven build
 
 * Enable annotation processing (source: https://immutables.github.io/apt.html):
    + Help | Eclipse Marketplace, Find: "m2e-apt", Install, ...
-   + Window | Preferences, Maven | Annotation Processing: select Automatically configure JDT APT
+   + Window | Preferences, Maven | Annotation Processing: select Automatically
+     configure JDT APT
 * Window | Preferences:
-   + General | Editors | Text Editors: check Insert spaces for tabs, Show print margin.
+   + General | Editors | Text Editors: check Insert spaces for tabs, Show print
+     margin.
    + Java | Code Coverage: Only path entries matching = "src/main/java".
-   + Java | Code Style | Code Templates | Comments | Types, Edit...: remove "@author ${user}", OK.
-   + Java | Code Style | Formatter, Edit..., Comments: uncheck:
-     - "Blank line before Javadoc tags",
-     - "Indent Javadoc tags" and
-     - "New line after @param tags".
+   + Java | Code Style | Code Templates | Comments | Types, Edit...: remove
+     "@author ${user}", OK.
+   + Java | Code Style | Formatter, Edit...,
+     - Indentation:
+       . Tab policy: change from "Tabs only" to "Spaces only".
+     - Braces: change all from "Same line" to "Next line on wrap".
+     - Line Wrapping:
+       , General settings:
+         . Maximum line width: reduce from 120 to 80.
+         . Default indentation for wrapped lines: reduce from 2 to 1.
+     - Comments: uncheck:
+       . "Blank line before Javadoc tags",
+       . "Indent Javadoc tags" and
+       . "New line after @param tags".
    + Maven | User Interface: check Open XML page in the POM editor by default.
-   + XML | XML Files | Editor: select Indent using spaces, set Indentation size to 4.
+   + XML | XML Files | Editor: select Indent using spaces, set Indentation size
+     to 4.

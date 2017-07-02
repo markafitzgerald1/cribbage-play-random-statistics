@@ -10,9 +10,11 @@ import com.google.common.collect.ImmutableCollection;
  */
 @AutoValue
 public abstract class Hand {
-	public static Hand create(@Nonnull final ImmutableCollection<CardIndex> cards) {
-		return new AutoValue_Hand(cards);
-	}
+    public static Hand create(
+        @Nonnull final ImmutableCollection<CardIndex> cards)
+    {
+        return new AutoValue_Hand(cards);
+    }
 
-	public abstract ImmutableCollection<CardIndex> cards();
+    public abstract ImmutableCollection<CardIndex> cards();
 }
