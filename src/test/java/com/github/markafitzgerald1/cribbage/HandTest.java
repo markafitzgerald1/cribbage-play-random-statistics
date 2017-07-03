@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import com.google.common.collect.ImmutableList;
 
+/** Provides direct unit test coverage of {@link Hand}. */
 public class HandTest {
     @Test
     public void create() {
