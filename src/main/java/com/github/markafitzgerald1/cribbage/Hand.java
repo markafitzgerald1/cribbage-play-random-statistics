@@ -5,9 +5,7 @@ import javax.annotation.Nonnull;
 import com.google.auto.value.AutoValue;
 import com.google.common.collect.ImmutableCollection;
 
-/**
- * Represents the set of unplayed cards held by a cribbage player.
- */
+/** Represents the set of unplayed cards held by a cribbage player. */
 @AutoValue
 public abstract class Hand {
     public static Hand create(
