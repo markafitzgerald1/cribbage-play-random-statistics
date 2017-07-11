@@ -22,6 +22,10 @@ TODO: automate some of this and/or verify in Maven build
        . "Blank line before Javadoc tags",
        . "Indent Javadoc tags" and
        . "New line after @param tags".
+   + Java | Editor | Save Actions...
+     - Check "Perform the selected actions on save", check "Format source code",
+       check "Additonal actions".
    + Maven | User Interface: check Open XML page in the POM editor by default.
    + XML | XML Files | Editor: select Indent using spaces, set Indentation size
      to 4.
+   + Apply and Close.
